@@ -9,6 +9,3 @@ I'm a good man
 
 <hr >
 
-### examples
-
-This is examples
