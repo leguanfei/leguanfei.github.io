@@ -3,14 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 张龙飞的博客
+subtitle: ' 探索编程与生活的旅程'
+description: 'A blog about programming, technology, and life experiences.'
 keywords:
 author: 张龙飞
-language: en
-timezone: ''
-
+language: zh-CN
+timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com

@@ -1,25 +1,21 @@
-- links_category: This is the first categrory
+- links_category: 博主链接
   has_thumbnail: true
   list:
-      - name: Jack's Blog
-        link: https://example.com
+      - name: 张龙飞's Blog
+        link: https://blog.zhanglongfei.fun
         description: I will refresh my article every day.
         avatar: /images/avatar-0.jpg
         thumbnail: /images/desc-image.jpg # has_thumbnail 为 true 时才需要
  
-- links_category: This is the second categrory
+- links_category: 其他站点分享QAQ
   has_thumbnail: false
   list:
-      - name: Partner Link 1
-        link: https://example.com
+      - name: P站
+        link: https://cn.pornhub.com/
         description: Example Site Imformation
         avatar: /images/avatar-1.jpg
-      - name: Partner Link 2
-        link: https://example.com
+      - name: 国内P站
+        link: https://91porn.com/
         description: Example Site Description
         avatar: /images/avatar-2.png
-      - name: Partner Link 3
-        link: https://example.com
-        description: Example Site Description
-        avatar: /images/avatar-3.png
  
