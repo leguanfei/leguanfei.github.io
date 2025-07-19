@@ -1,8 +1,3 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
-# Site
 title: 张龙飞的博客
 subtitle: ' 探索编程与生活的旅程'
 description: 'A blog about programming, technology, and life experiences.'
@@ -10,9 +5,9 @@ keywords:
 author: 张龙飞
 language: zh-CN
 timezone: 'Asia/Shanghai'
+
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://blog.zhanglongfei.fun
 permalink: :title/
 permalink_defaults:
 pretty_urls:
@@ -88,8 +83,8 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
+include:  
+exclude:  
 ignore:
 
 # Extensions
