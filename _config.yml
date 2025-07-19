@@ -1,7 +1,14 @@
 title: 张龙飞的博客
-subtitle: ' 探索编程与生活的旅程'
+subtitle: ' 探索生活的旅程'
 description: 'A blog about programming, technology, and life experiences.'
 keywords:
+  - 编程
+  - 技术
+  - 生活
+  - 博客
+  - 张龙飞
+  - Hexo
+  - 开源
 author: 张龙飞
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -24,7 +31,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
-# Writing
+# 文章设置
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
@@ -32,8 +39,8 @@ external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
   exclude: ''
-filename_case: 0
-render_drafts: false
+filename_case: 0  # 0:保持原样, 1:小写, 2:大写, 3:首字母大写
+render_drafts: false 
 post_asset_folder: false
 relative_link: false
 future: true
