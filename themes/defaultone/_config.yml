@@ -348,8 +348,8 @@ comment:
       clientID: Ov23liX1nqLyZRNs217Z # GitHub Application Client ID
       clientSecret: bad2de233a71bae2840e970e718f3f546115530f # GitHub Application Client Secret
       repo: myblog # GitHub repository
-      owner: leguanfei # GitHub repository owner
-      # proxy: # GitHub repository proxy
+      owner: leguanfei # GitHub repository owner  
+      proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token   
 # COMMENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
