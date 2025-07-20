@@ -4,8 +4,8 @@
       - name: 张龙飞's Blog
         link: https://blog.zhanglongfei.fun
         description: I will refresh my article every day.
-        avatar: /images/avatar-0.jpg
-        thumbnail: /images/desc-image.jpg # has_thumbnail 为 true 时才需要
+        avatar: /images/icons/头像.svg
+        thumbnail: /images/icons/头像.svg  
  
 - links_category: 其他站点分享QAQ
   has_thumbnail: false
@@ -13,9 +13,9 @@
       - name: P站
         link: https://cn.pornhub.com/
         description: Example Site Imformation
-        avatar: /images/avatar-1.jpg
+        avatar: /images/icons/头像.svg
       - name: 国内P站
         link: https://91porn.com/
         description: Example Site Description
-        avatar: /images/avatar-2.png
+        avatar: /images/icons/头像.svg
  
