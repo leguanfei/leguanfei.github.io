@@ -10,6 +10,9 @@ tags: 良子
 
 
 在网络世界的喧嚣中，有这样一位独特的存在 —— 农村大胃袋良子，以其超乎常人的食量和极具特色的个人形象，吸引了众多网友的目光。
+<div style="position: relative; padding: 30% 45%;">
+  <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="//player.bilibili.com/player.html?bvid=BV1viEtzTEoP&page=1&as_wide=1&high_quality=1&danmaku=0&autoplay=0" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
+</div>
 
 ## 基本信息与早年经历
 
