@@ -428,6 +428,7 @@ plugins:
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
     enable: true # Whether to enable
+    autoplay: true # Whether to autoplay
     type: fixed # fixed, mini
     audios:
       - name: TikTok 
