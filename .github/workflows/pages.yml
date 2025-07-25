@@ -1,50 +1,45 @@
-name: Pages
+name: Build and Deploy Hexo Site
 
+# 控制工作流程的触发条件
 on:
   push:
     branches:
-      - main # default branch
+      - main # 只有当 main 分支发生 push 事件时才触发
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build-and-deploy:
+    runs-on: ubuntu-latest # 使用最新的 Ubuntu 系统作为运行环境
+    
+    # 授予工作流程向仓库写入内容的权限，以便将构建好的网站推送到 gh-pages 分支
+    permissions:
+      contents: write
+
     steps:
-      - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # If your repository depends on submodule, please see: https://github.com/actions/checkout
-          submodules: recursive
-      - name: Use Node.js 20
+      # 第一步：检出你的代码
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      # 第二步：设置 Node.js 环境
+      - name: Set up Node.js 🟩
         uses: actions/setup-node@v4
         with:
-          # Examples: 20, 18.19, >=16.20.2, lts/Iron, lts/Hydrogen, *, latest, current, node
-          # Ref: https://github.com/actions/setup-node#supported-version-syntax
-          node-version: "22.14.0"
-      - name: Cache NPM dependencies
-        uses: actions/cache@v4
-        with:
-          path: node_modules
-          key: ${{ runner.OS }}-npm-cache
-          restore-keys: |
-            ${{ runner.OS }}-npm-cache
-      - name: Install Dependencies
+          node-version: '22.14.0' # 指定使用的 Node.js 版本
+          cache: 'npm'       # 缓存 npm 的依赖项，加快后续构建速度
+
+      # 第三步：安装项目依赖
+      - name: Install Dependencies 📦
         run: npm install
-      - name: Build
+
+      # 第四步：构建静态网站
+      - name: Build Site 🏗️
+        # 执行 package.json 中定义的 "build" 命令，即 "hexo generate"
         run: npm run build
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+
+      # 第五步：部署到 GitHub Pages
+      - name: Deploy to GitHub Pages 🚀
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: ./public
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          # GITHUB_TOKEN 是由 GitHub Actions 自动创建的，用于授权
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Hexo 生成的静态文件默认放在 public 目录下
+          publish_dir: ./public
