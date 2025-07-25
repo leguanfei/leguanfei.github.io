@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main # 只有当 main 分支发生 push 事件时才触发
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest # 使用最新的 Ubuntu 系统作为运行环境
