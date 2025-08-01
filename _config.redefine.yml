@@ -431,6 +431,9 @@ plugins:
     autoplay: true # Whether to autoplay
     type: fixed # fixed, mini
     audios:
+      - name: 春桥与志明 # audio name
+        artist: 春娇与志明 #audio artist
+        url: /music/春娇与志明.flac #audio url
       - name: TikTok 
         artist: 2PM   
         url: https://r2.134187.xyz/music/TikTok.flac
