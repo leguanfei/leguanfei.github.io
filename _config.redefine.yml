@@ -134,7 +134,7 @@ home_banner:
     light: /images/wallpaper/F42-01-day.jpg # light mode
     dark: /images/wallpaper/F42-01-night.jpg # dark mode
   # Home banner title
-  title: 「终不似，少年游」 # title text
+  title: 「须知少日拏云志，曾许人间第一流」 # title text
   # Home banner subtitle
   subtitle:
     text: ["Welcome to my blog"] # subtitle text, array
